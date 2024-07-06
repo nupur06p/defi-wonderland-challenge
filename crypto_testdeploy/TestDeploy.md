@@ -1,6 +1,6 @@
 ## Foundry Testing
 
-![Alt text](crypto_testdeploy/screenshots/p1.jpg?raw=true "testInitializationOwner")
+![Alt text](/crypto_testdeploy/screenshots/p1.jpg?raw=true "testInitializationOwner")
 
 ![Alt text](/crypto_testdeploy/screenshots/p2.jpg?raw=true "testUsersCanMintEggsWithETH")
 
