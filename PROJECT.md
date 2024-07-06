@@ -4,6 +4,7 @@
 The project is updated on the below details:
 
 •	 EGGs are ERC20 tokens
+
 •	 EGGs are indivisible
 •	 ANTs are ERC721 tokens (NFTs)
 •	 Users buy EGGs using ETH
