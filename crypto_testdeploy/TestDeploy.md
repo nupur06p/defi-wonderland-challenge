@@ -35,4 +35,4 @@
 
 ![Alt text](/crypto_testdeploy/screenshots/d6.jpg?raw=true "sepolia_testnet")
 
-![Alt text](/crypto_testdeploy/scrrenshots/d7.jpg?raw=true "sepolia_testnet")
+![Alt text](/crypto_testdeploy/screenshots/d7.jpg?raw=true "sepolia_testnet")
