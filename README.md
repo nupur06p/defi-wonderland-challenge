@@ -1,66 +1,59 @@
-## Foundry
+### Project Preview
+The project is updated on the below details:
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+• EGGs are ERC20 tokens
 
-Foundry consists of:
+• EGGs are indivisible
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+• ANTs are ERC721 tokens (NFTs)
 
-## Documentation
+• Users buy EGGs using ETH
 
-https://book.getfoundry.sh/
+• EGGs costs 0.01 ETH
 
-## Usage
+• An EGG can be used to create an ANT
 
-### Build
+• Users create an ANT if they own at least one EGG
 
-```shell
-$ forge build
-```
+• An ANT can be sold for 0.004 ETH by the ANT owner
 
-### Test
+• EGGS can be created randomly between 0 to antMaxEggs. Ants have a x% of dying while creating EGGS
 
-```shell
-$ forge test
-```
+• Owner can change the price of an EGG and ANT
 
-### Format
+• TimeLock and Expired function handles the time duration
 
-```shell
-$ forge fmt
-```
+• Random function generates a random number between 0 to antMaxEggs
 
-### Gas Snapshots
+• Ownable librray applies the onlyOwner modifier to the required functions
 
-```shell
-$ forge snapshot
-```
+• Modifier lock is set to handle Reentrancy attack
 
-### Anvil
+• Ownership can be transferred by the owner
 
-```shell
-$ anvil
-```
+• Owner can change the price of an EGG and ANT
 
-### Deploy
+• Max eggs (_antMaxEggs) created randomly and ANT death chance (_antDeathChance) can be changed by the owner
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+### Testing
+• Slither and Aderyn tools were used to check for errors.
 
-### Cast
+• Some important errors handled- -- Reentrancy Errors
 
-```shell
-$ cast <subcommand>
-```
+ -- Removing block.timestamp and creating Timelock Expired functions
 
-### Help
+ -- Creating a better random function than that using `keccak256(abi.encodePacked)`
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+ -- Adding several custom errors and events to the code
+
+ -- Marking public functions as external as per the requirement
+• E2E tests are complete
+
+• Project is deployed to local network and sepolia test network
+
+• Screenshots of testing the project using foundry and deploying them to local network and sepolia test network is in folder crypto_testdeploy
+
+• E2E tests are complete
+
+Efforts Than Could Make The Code Better
+• RandomNumber function was being tested to generate random numbers using Chainlik VRF but faced issues in its deployment and it was required to raise it on GitHub to check the error. It woudl have taken more 2-3 days. Hence, didn't proceed due to time constrain.
