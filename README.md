@@ -35,7 +35,7 @@ The project is updated on the below details:
 
 • Max eggs (_antMaxEggs) created randomly and ANT death chance (_antDeathChance) can be changed by the owner
 
-### Testing
+# Testing
 • Slither and Aderyn tools were used to check for errors.
 
 • Some important errors handled- -- Reentrancy Errors
