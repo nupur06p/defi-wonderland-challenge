@@ -1,4 +1,4 @@
-### Project Preview
+# Project Preview
 The project is updated on the below details:
 
 • EGGs are ERC20 tokens
